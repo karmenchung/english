@@ -1,0 +1,36 @@
+# IndexTTS / Python Project Gitignore
+
+# Audio Outputs
+*.wav
+outputs/
+
+# Large Model Files & Directories
+TTS/
+checkpoints/
+hf_cache/
+
+# Python Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Caches and Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment Variables & Secrets
+.env
+.env.local
+
+# Project Specific
+.python-version
+uv.lock
+
+# OS Specific
+.DS_Store
+Thumbs.db
