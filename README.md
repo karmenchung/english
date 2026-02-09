@@ -19,3 +19,11 @@ uv run python batch_tts.py --prompt_wav ".\TTS\voice_01.wav" --model_dir ".\TTS\
 ```
 uv run python csv_batch_tts.py --csv "dialogs.csv" --prompt_wav ".\TTS\voice_01.wav" --model_dir ".\TTS\index-tts\checkpoints" --output "dialog_study.wav"
 ```
+
+```
+uv run python csv_batch_tts.py --csv "dialogs.csv" --prompt_wav ".\TTS\voice_01.wav"--model_dir ".\TTS\index-tts\checkpoints" --limit 2 --output "test_loop.wav"
+```
+最终版本
+```
+uv run python csv_batch_tts.py --csv "dialogs.csv" --en_prompt ".\TTS\voice_01.wav" --zh_prompt  ".\TTS\voice_02.wav" --model_dir ".\TTS\index-tts\checkpoints" --limit 2 --output "dual_voice_test.wav"
+```
